@@ -1,0 +1,36 @@
+
+
+
+
+.background {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+.background::before,
+.background::after {
+  content: '';
+  position: absolute;
+  border-radius: 60.64331rem;
+  background: rgba(153, 100, 2, 0.40);
+  filter: blur(200px);
+}
+
+.background::before {
+  top: 20vh;
+  left: 30vw;
+  width: 10rem;
+  height: 10rem;
+}
+
+.background::after {
+  top: 60vh;
+  left: 70vw;
+  width: 12rem;
+  height: 12rem;
+}
+
+/* Add more pseudo-elements for additional spots */
