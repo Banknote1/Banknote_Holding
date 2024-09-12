@@ -25,6 +25,7 @@ const Background = () => {
   return (
     <div style={backgroundStyle}>
       {spots.map((spot, index) => (
+        
         <Spot key={index} top={spot.top} left={spot.left} size={spot.size} />
       ))}
     </div>
