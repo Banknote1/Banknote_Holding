@@ -1,0 +1,13 @@
+.logo_container{
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.parent_img{
+    width: 800.001px;
+    height: 698.815px;
+    flex-shrink: 0;
+}

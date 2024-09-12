@@ -1,9 +1,15 @@
-import React from 'react'
+import styles from "./landing.module.css";
+import Logo from './logo'
 
-function landing() {
+function Landing() {
   return (
-    <div>landing</div>
+ 
+    <div className={styles.logo_container}  >
+
+        <Logo/>
+    </div>
+   
   )
 }
 
-export default landing
+export default Landing
