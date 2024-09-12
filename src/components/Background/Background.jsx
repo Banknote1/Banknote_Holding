@@ -7,7 +7,7 @@ const Background = () => {
   useEffect(() => {
     const cornerPositions = [
       { top: 0, left: -5 },       // Top-left corner
-        { top: 0, left: 90 },
+      { top: 0, left: 90 },
       { top: 35, left: -10 },      // Bottom-left corner
         // Top-right corner
       { top: 90, left: -5 },      // Bottom-left corner
@@ -16,16 +16,15 @@ const Background = () => {
 
     const newSpots = cornerPositions.map(position => ({
       ...position,
-      size: Math.random() * 20 + 15 // Random size between 5rem and 15rem
+      size: Math.random() * 40 + 15 // Random size between 5rem and 15rem
     }));
 
     setSpots(newSpots);
   }, []);
 
   return (
-    <div style={backgroundStyle}>
+    <div style={backgroundStyle} className='background-container'>
       {spots.map((spot, index) => (
-        
         <Spot key={index} top={spot.top} left={spot.left} size={spot.size} />
       ))}
     </div>

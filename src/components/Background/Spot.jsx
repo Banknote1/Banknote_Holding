@@ -9,7 +9,7 @@ const Spot = ({ top, left, size }) => {
     height: `${size}rem`,
     borderRadius: '60.64331rem',
     background: 'rgba(153, 100, 2, 0.40)',
-    filter: 'blur(80px)',
+    filter: 'blur(120px)',
   };
 
   return <div style={spotStyle}></div>;

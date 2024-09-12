@@ -1,9 +1,9 @@
 // App.jsx
-import { useState } from 'react';
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Background from './Background';
-import Navbar from './Home/Navbar';
+import Background from './components/Background/Background';
+import Navbar from './components/navbar/Navbar';
 
 
 function App() {
