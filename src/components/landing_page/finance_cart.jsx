@@ -1,10 +1,8 @@
 import React from "react";
 
-export const FinanceCart = ({styles,title,content,link}) => {
+export const FinanceCart = ({ styles, title, content, link }) => {
   return (
-    <div
-      className={`col-6 col-md-3 ${styles.finance_card} justify-content-center`}
-    >
+    <div className={`${styles.finance_card} h-100`}>
       <div className={`${styles.cart_title}`}>{title}</div>
       <div className={`${styles.cart_content}`}>{content}</div>
       <div className={`${styles.cart_button}`}>

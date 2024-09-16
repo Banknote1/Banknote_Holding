@@ -49,7 +49,7 @@ const OurCampany = () => {
           }
         >
           <div className={styles.accordion_body}>
-            <div className="row mx-5 align-items-center">
+            <div className="row mx-5 align-items-center mb-5 ">
               <div className="col-8">
                 <p>
                   "Securing Your Future, Together."
@@ -73,35 +73,43 @@ const OurCampany = () => {
               </div>
             </div>
             {/* ============= carts ========== */}
-            <div className="row mx-5 g-1">
-              <FinanceCart
-                styles={styles}
-                title={"banking facilities"}
-                content={
-                  "Banking facilities encompass a wide range of services and products offered by banks to help individuals and businesses manage their finances. Key facilities include:"
-                }
-              />
-              <FinanceCart
-                styles={styles}
-                title={"financial planning"}
-                content={
-                  "Financial planning is the process of creating a comprehensive strategy to achieve your financial goals."
-                }
-              />
-              <FinanceCart
-                styles={styles}
-                title={"Accounting Advisory Services"}
-                content={
-                  "Accounting Advisory Services (AAS) provide expert guidance to businesses and organizations in managing complex accounting and financial reporting requirements."
-                }
-              />
-              <FinanceCart
-                styles={styles}
-                title={"Assurance & Advisory"}
-                content={
-                  "Assurance & Advisory services are crucial components of financial management, designed to enhance the reliability of financial information and provide strategic insights to improve business performance."
-                }
-              />
+            <div className="row mx-5 g-2 d-flex align-items-stretch">
+              <div className="col-6 col-md-3">
+                <FinanceCart
+                  styles={styles}
+                  title={"banking facilities"}
+                  content={
+                    "Banking facilities encompass a wide range of services and products offered by banks to help individuals and businesses manage their finances. Key facilities include:"
+                  }
+                />
+              </div>
+              <div className="col-6 col-md-3">
+                <FinanceCart
+                  styles={styles}
+                  title={"financial planning"}
+                  content={
+                    "Financial planning is the process of creating a comprehensive strategy to achieve your financial goals."
+                  }
+                />
+              </div>
+              <div className="col-6 col-md-3">
+                <FinanceCart
+                  styles={styles}
+                  title={"Accounting Advisory Services"}
+                  content={
+                    "Accounting Advisory Services (AAS) provide expert guidance to businesses and organizations in managing complex accounting and financial reporting requirements."
+                  }
+                />
+              </div>
+              <div className="col-6 col-md-3">
+                <FinanceCart
+                  styles={styles}
+                  title={"Assurance & Advisory"}
+                  content={
+                    "Assurance & Advisory services are crucial components of financial management, designed to enhance the reliability of financial information and provide strategic insights to improve business performance."
+                  }
+                />
+              </div>
             </div>
           </div>
         </AccordionTab>
@@ -138,26 +146,142 @@ const OurCampany = () => {
         >
           <div className={styles.accordion_body}>
             <div className="row">
-              <div className="col-8">
+              <div className="m-5">
                 <p>
-                  "Securing Your Future, Together."
+                  An exporting company specializes in taking products from
+                  Egyptian businesses and exporting them to international
+                  markets. This company conducts thorough market research and
+                  analysis to identify the best global opportunities for these
+                  products.
                   <br />
-                  We empower clients with tailored financial strategies,
-                  offering expert planning, investment management, and risk
-                  assessment. With transparency and trust, we guide you to a
-                  secure financial future.
+                  <br />
+                  They handle the entire export process, including logistics,
+                  documentation, and compliance with international trade
+                  regulations, ensuring that the products reach the right
+                  markets efficiently and successfully.
                 </p>
-                <div>
-                  "Securing Your Future, Together."
-                  <br />
-                  We empower clients with tailored financial strategies,
-                  offering expert planning, investment management, and risk
-                  assessment. With transparency and trust, we guide you to a
-                  secure financial future.
+                <div className={`${styles.btn_more}`}>
+                  <button>click to learn more</button>
                 </div>
               </div>
-              <div className="col-4">
-                <img src="./assets/images/FINANCE.png" alt="Finance" />
+              <div className={`${styles.according_center_img}`}>
+                <img src="./assets/images/exporting.png" alt="exporting.png" />
+              </div>
+            </div>
+          </div>
+        </AccordionTab>
+        {/* =========================== BANKNOTE  trading ============================== */}
+        <AccordionTab
+          className={`${styles.collapse_header} mb-3`}
+          header={
+            <div
+              className={`${
+                activeIndex === 2
+                  ? styles.active_according
+                  : styles.collapse_header
+              } mb-3`}
+            >
+              <img
+                src="./assets/images/seprator.png"
+                className="w-100"
+                alt=""
+              />
+              <span className={styles.gradient_text}>
+                <i
+                  className={`pi ${
+                    activeIndex === 2
+                      ? "pi-caret-down active_according"
+                      : "pi-caret-right"
+                  }`}
+                  style={{ marginRight: "8px" }}
+                ></i>
+                banknote trading
+              </span>
+            </div>
+          }
+        >
+          <div className={styles.accordion_body}>
+            <div className="row">
+              <div className="m-5">
+                <p>
+                  We are pleased to serve as the bridge between Egyptian
+                  companies and international markets. We collaborate with you
+                  to source your products, whether agricultural or industrial,
+                  to global markets, providing you with the opportunity to
+                  expand and grow on a global scale.
+                  <br />
+                  <br />
+                  Our company takes care of the entire process, from marketing
+                  and selling your products in large quantities to customers
+                  abroad or within the local market. We manage all logistics and
+                  commercial processes, including shipping, storage, and export
+                  or domestic sales procedures, allowing you to concentrate on
+                  production without the hassle of managing sales complexities.
+                </p>
+                <div className={`${styles.btn_more}`}>
+                  <button>click to learn more</button>
+                </div>
+              </div>
+              <div className={`${styles.according_center_img}`}>
+                <img src="./assets/images/trading.png" alt="exporting.png" />
+              </div>
+            </div>
+          </div>
+        </AccordionTab>
+        {/* =========================== BANKNOTE store ============================== */}
+        <AccordionTab
+          className={`${styles.collapse_header} mb-3`}
+          header={
+            <div
+              className={`${
+                activeIndex === 3
+                  ? styles.active_according
+                  : styles.collapse_header
+              } mb-3`}
+            >
+              <img
+                src="./assets/images/seprator.png"
+                className="w-100"
+                alt=""
+              />
+              <span className={styles.gradient_text}>
+                <i
+                  className={`pi ${
+                    activeIndex === 3
+                      ? "pi-caret-down active_according"
+                      : "pi-caret-right"
+                  }`}
+                  style={{ marginRight: "8px" }}
+                ></i>
+                banknote store
+              </span>
+            </div>
+          }
+        >
+          <div className={styles.accordion_body}>
+            <div className="row">
+              <div className="m-5">
+                <p>
+                  Our investment company offers a unique opportunity for
+                  businesses looking to sell their products through us. We
+                  specialize in purchasing a wide range of products directly
+                  from manufacturers or suppliers, whether they are high-value
+                  items or more affordable goods in large quantities.
+                  <br />
+                  <br />
+                  We then showcase these products in our store at competitive
+                  prices, often featuring special deals and discounts to attract
+                  a broad customer base. By partnering with us, you can benefit
+                  from our extensive market reach and our ability to maximize
+                  profits through strategic bulk purchasing and effective retail
+                  distribution.
+                </p>
+                <div className={`${styles.btn_more}`}>
+                  <button>click to learn more</button>
+                </div>
+              </div>
+              <div className={`${styles.according_center_img}`}>
+                {/* <img src="./assets/images/trading.png" alt="exporting.png" /> */}
               </div>
             </div>
           </div>
