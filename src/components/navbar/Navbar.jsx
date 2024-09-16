@@ -27,7 +27,6 @@ function Navbar() {
                 >
                   <span className="navbar-toggler-icon"></span>
                 </button>
-
                 <div
                   className={`collapse navbar-collapse ${styles.navbarContent}`}
                   id="navbarNavDropdown"
@@ -49,14 +48,7 @@ function Navbar() {
                         COMPANIES
                       </Link>
                     </li>
-                    <li className={`nav-item ${styles.navItem}`}>
-                      <Link
-                        className={`nav-link mx-2 ${styles.NavLink} `}
-                        to="/"
-                      >
-                        WHO WE ARE
-                      </Link>
-                    </li>
+
                     <li className={`nav-item ${styles.navItem}`}>
                       <Link
                         className={`nav-link mx-2 ${styles.NavLink}`}
@@ -67,8 +59,6 @@ function Navbar() {
                     </li>
                   </ul>
                 </div>
-                
-            
               </div>
             </div>
           </nav>
@@ -132,7 +122,6 @@ function Navbar() {
               </svg>
             </div>
           </div>
-
         </div>
       </div>
     </div>

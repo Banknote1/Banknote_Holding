@@ -19,7 +19,7 @@ const OurCampany = () => {
       <Accordion
         activeIndex={activeIndex}
         onTabChange={handleTabChange}
-        style={{ backgroundColor: "black" }}
+        style={{ backgroundColor: "black !important" }}
       >
         {/* ========================== BANKNOTE FINANCE =============================== */}
         <AccordionTab
@@ -36,6 +36,7 @@ const OurCampany = () => {
                 alt=""
               />
               <span className={styles.gradient_text}>
+                {/* Conditionally render caret-right or caret-down icon */}
                 <i
                   className={`pi ${
                     activeIndex === 0 ? "pi-caret-down" : "pi-caret-right"
@@ -121,6 +122,7 @@ const OurCampany = () => {
                 alt=""
               />
               <span className={styles.gradient_text}>
+                {/* Conditionally render caret-right or caret-down icon */}
                 <i
                   className={`pi ${
                     activeIndex === 1
