@@ -7,7 +7,103 @@
 }
 
 .parent_img{
+    position: relative;
     width: 800.001px;
     height: 698.815px;
-    flex-shrink: 0;
+    overflow: hidden;
+    z-index: 9;
 }
+.parent_img img{ 
+    position: relative;
+    z-index: 9;
+}
+.middle_container{
+    position: absolute;
+    top: 99px;
+    left: 30px;
+    width: 93%;
+    height: 82%;
+    padding: 70px;
+    z-index: 1;
+}
+.middle_img{
+    width: 100%;
+    height: 100%;
+}
+.animate {
+    animation: moveDown 5s ease-in-out infinite;
+  }
+  
+  @keyframes moveDown {
+    0% {
+        top: 99px;
+    }
+    25% {
+        top: 99px;
+    }
+    50% {
+      top: 100%;
+      
+    }
+    75% {
+        top: 99px;
+    }
+    100% {
+        top: 99px;
+    }
+  }
+
+  .section_title{
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 100px;
+    font-weight: 400;
+    background: linear-gradient(112deg, #FFF 24.02%, #999 98.59%);
+    color:transparent;
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+  .collase_parent{
+    background-color: black;
+  }
+ 
+  .collapse_header {
+    font-family: "Bebas Neue";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .collapse_header a {
+    text-decoration: none;
+    background: linear-gradient(112deg, #FFF 24.02%, #999 98.59%);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+    
+  }
+  .active_according{
+    text-decoration: none;
+    background: linear-gradient(90deg, #E9C568 0%, rgba(153, 120, 2, 0.80) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+ .collapse_header svg{
+  display: none;
+ }
+  
+
+  .accordion_body {
+    color: #FFF;
+    font-family: "Roboto Condensed";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+  .accordion_body img{
+    height: 400px;
+  }
