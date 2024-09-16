@@ -2,6 +2,8 @@
 import  { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import Background from './components/Background/Background';
 import Navbar from './components/navbar/Navbar';
 import Landing from './components/landing_page/landing';
