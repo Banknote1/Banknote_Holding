@@ -108,7 +108,7 @@
   padding: 20px 10px;
   border-radius: 10px;
   border: 1px solid rgba(255, 200, 3, 0.3);
-  box-shadow: 0px 3.451px 3.451px 0px rgba(255, 200, 3, 0.30) inset;
+  box-shadow: 0px 3.451px 3.451px 0px rgba(255, 200, 3, 0.3) inset;
 }
 .finance_card .cart_title {
   color: #fff;
@@ -120,7 +120,7 @@
   margin-bottom: 10px;
 }
 .finance_card .cart_content {
-  color: rgba(255, 255, 255, 0.70);
+  color: rgba(255, 255, 255, 0.7);
   text-align: center;
   font-family: "Roboto Condensed";
   font-size: 17px;
@@ -129,7 +129,7 @@
   padding-bottom: 50px;
 }
 
-.finance_card .cart_button {
+ .cart_button {
   position: absolute;
   bottom: 10px;
   width: 100%;
@@ -137,14 +137,15 @@
   justify-content: center;
 }
 
-.btn_more{
+.btn_more {
   display: flex;
   width: 100%;
   justify-content: center;
   /* align-items: center; */
 }
 
-.finance_card .cart_button button, .btn_more button {
+.finance_card .cart_button button,
+.btn_more button ,.service_cart button {
   color: #fff;
   font-size: 20px;
   padding: 8px 20px;
@@ -152,13 +153,43 @@
   border: 2px solid #fff;
   border-radius: 18px;
   text-transform: capitalize;
-
 }
-.according_center_img{
+.according_center_img {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.according_center_img img{
+.according_center_img img {
   width: 900px;
+}
+
+.service_cart {
+  height: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 0.863px solid rgba(255, 200, 3, 0.3);
+  opacity: 0.9;
+  background: rgba(6, 4, 4, 0.8);
+  box-shadow: 0px 3.451px 3.451px 0px rgba(255, 200, 3, 0.3) inset;
+  position: relative;
+}
+.service_title {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -2px;
+  text-transform: capitalize;
+}
+.service_content {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+  margin: 20px 0px 50px;
 }

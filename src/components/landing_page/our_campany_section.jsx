@@ -3,6 +3,7 @@ import styles from "./landing.module.css";
 import "primeicons/primeicons.css";
 import { Accordion, AccordionTab } from "primereact/accordion";
 import { FinanceCart } from "./finance_cart";
+import { ServiceCart } from "./service_cart";
 
 const OurCampany = () => {
   // State to manage the active index of the Accordion
@@ -282,6 +283,60 @@ const OurCampany = () => {
               </div>
               <div className={`${styles.according_center_img}`}>
                 {/* <img src="./assets/images/trading.png" alt="exporting.png" /> */}
+              </div>
+            </div>
+          </div>
+        </AccordionTab>
+        {/* =========================== BANKNOTE services ============================== */}
+        <AccordionTab
+          className={`${styles.collapse_header} mb-3`}
+          header={
+            <div
+              className={`${
+                activeIndex === 4
+                  ? styles.active_according
+                  : styles.collapse_header
+              } mb-3`}
+            >
+              <img
+                src="./assets/images/seprator.png"
+                className="w-100"
+                alt=""
+              />
+              <span className={styles.gradient_text}>
+                <i
+                  className={`pi ${
+                    activeIndex === 4
+                      ? "pi-caret-down active_according"
+                      : "pi-caret-right"
+                  }`}
+                  style={{ marginRight: "8px" }}
+                ></i>
+                banknote services
+              </span>
+            </div>
+          }
+        >
+          <div className={styles.accordion_body}>
+            <div className="row">
+              <div className="mx-5 my-2">
+                <p>
+                We are pleased to offer you a comprehensive suite of services designed to meet your diverse needs. In addition to our financial and investment services, we provide a wide range of specialized services, including:
+                </p>
+              </div>
+              <div className="mx-5 my-2 row g-3">
+                <div className="col-md-6">
+                  <ServiceCart styles={styles} title={'car services'} content={'Car services include maintenance, repairs, and detailing to keep vehicles running smoothly and looking their best. They cover everything from routine check-ups to emergency roadside assistance, ensuring your car remains safe and reliable.'} link={"cxvv"} />
+                </div>
+                <div className="col-md-6">
+                  <ServiceCart styles={styles} title={'home services'} content={'Home services provide essential maintenance, cleaning, and repairs to keep your living space comfortable and functional. They include tasks like plumbing, electrical work, and pest control, ensuring your home is well-maintained and in top condition.'} link={"cxvv"} />
+                </div>
+                <div className="col-md-6">
+                  <ServiceCart styles={styles} title={'transportation services'} content={'Home services provide essential maintenance, cleaning, and repairs to keep your living space comfortable and functional. They include tasks like plumbing, electrical work, and pest control, ensuring your home is well-maintained and in top condition.'} link={"cxvv"} />
+                </div>
+                <div className="col-md-6">
+                  <ServiceCart styles={styles} title={'technology sevises'} content={'Home services provide essential maintenance, cleaning, and repairs to keep your living space comfortable and functional. They include tasks like plumbing, electrical work, and pest control, ensuring your home is well-maintained and in top condition.'} link={"cxvv"} />
+                </div>
               </div>
             </div>
           </div>
