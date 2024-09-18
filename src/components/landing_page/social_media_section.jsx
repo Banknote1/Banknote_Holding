@@ -30,7 +30,7 @@ export const SocialMediaSection = () => {
       </div>
 
       {/* =========================== footer ================== */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

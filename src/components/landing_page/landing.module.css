@@ -1,5 +1,5 @@
 .logo_container {
-  height: 150vh;
+  height: 140vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -256,7 +256,7 @@
     rgba(255, 167, 3, 0.04) 100%
   );
   box-shadow: 0px 3.301px 3.301px 0px rgba(0, 0, 0, 0.25) inset;
-  padding: 30px 15px;
+  padding: 30px 150px;
 }
 .social_title {
   font-family: Roboto;
