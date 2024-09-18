@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import styles from "./landing.module.css";
 import "primeicons/primeicons.css";
 import { Accordion, AccordionTab } from "primereact/accordion";
-import { FinanceCart } from "./finance_cart";
-import { ServiceCart } from "./service_cart";
+import { FinanceCart } from "../shared/finance_cart";
+import { ServiceCart } from "../shared/service_cart";
 
 const OurCampany = () => {
   // State to manage the active index of the Accordion
@@ -20,7 +20,7 @@ const OurCampany = () => {
       <Accordion
         activeIndex={activeIndex}
         onTabChange={handleTabChange}
-        style={{ backgroundColor: "black !important" }}
+        style={{ backgroundColor: "black !important" ,position: 'relative',zIndex:'99'}}
       >
         {/* ========================== BANKNOTE FINANCE =============================== */}
         <AccordionTab

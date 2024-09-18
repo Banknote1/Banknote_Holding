@@ -5,3 +5,6 @@
   background-color: black;
   overflow: hidden;
 };
+body{
+  box-sizing: border-box;
+}

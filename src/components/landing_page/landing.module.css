@@ -50,7 +50,7 @@
     top: 99px;
   }
 }
-
+/* =============================== start companies section ===================================== */
 .section_title {
   text-align: center;
   font-family: "Bebas Neue";
@@ -69,9 +69,7 @@
 .collapse_header {
   font-family: "Bebas Neue";
   font-size: 50px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 .collapse_header a {
   text-decoration: none;
@@ -94,9 +92,7 @@
   color: #fff;
   font-family: "Roboto Condensed";
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   text-transform: lowercase;
 }
 .accordion_body img {
@@ -129,7 +125,7 @@
   padding-bottom: 50px;
 }
 
- .cart_button {
+.cart_button {
   position: absolute;
   bottom: 10px;
   width: 100%;
@@ -145,7 +141,8 @@
 }
 
 .finance_card .cart_button button,
-.btn_more button ,.service_cart button {
+.btn_more button,
+.service_cart button {
   color: #fff;
   font-size: 20px;
   padding: 8px 20px;
@@ -177,9 +174,7 @@
   color: #fff;
   font-family: Roboto;
   font-size: 40px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   letter-spacing: -2px;
   text-transform: capitalize;
 }
@@ -187,9 +182,109 @@
   color: rgba(255, 255, 255, 0.7);
   font-family: "Roboto Condensed";
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   text-transform: lowercase;
   margin: 20px 0px 50px;
 }
+
+/* =============================== end companies section ===================================== */
+
+/* =============================== start who we are section ===================================== */
+
+.who_we_are {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 100px;
+  font-weight: 800;
+  letter-spacing: -5.055px;
+  text-transform: uppercase;
+  background: linear-gradient(
+    180deg,
+    #e9c568 11.89%,
+    rgba(255, 200, 3, 0.51) 37.56%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.who_title {
+  color: rgba(245, 245, 245, 0.6);
+  text-align: center;
+  font-family: "Roboto Condensed";
+  font-size: 36.355px;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+.who_cart_title {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+.who_cart_content {
+  color: rgba(245, 245, 245, 0.8);
+  font-family: "Roboto Condensed";
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+.who_cart_image img {
+  object-fit: cover;
+  padding-top: 25px;
+  width: 100%;
+}
+.who_cart_image2 img {
+  object-fit: cover;
+  padding-top: 170px;
+  width: 100%;
+}
+
+.test_dev {
+  border: 5px solid red;
+}
+
+/* =============================== end who we are section ===================================== */
+
+/* =============================== start soical media section ===================================== */
+
+.social_section {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 200, 3, 0.2) 37.23%,
+    rgba(255, 167, 3, 0.04) 100%
+  );
+  box-shadow: 0px 3.301px 3.301px 0px rgba(0, 0, 0, 0.25) inset;
+  padding: 30px 15px;
+}
+.social_title {
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -2.663px;
+  text-transform: capitalize;
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.5) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social_Contact_us {
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 18.308px;
+  padding: 8px 30px;
+  background: linear-gradient(180deg, #ffc803 0%, rgba(255, 167, 3, 0.54) 100%);
+}
+
+.social_icon a img {
+  width: 36px;
+}
+
+/* =============================== end soical media section ===================================== */
+
+/* =============================== start  section ===================================== */

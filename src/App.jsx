@@ -19,7 +19,9 @@ function App() {
       { top: 35, left: -10 },      // Bottom-left corner
         // Top-right corner
       { top: 90, left: -5 },      // Bottom-left corner
-      { top: 90, left: 90 }      // Bottom-right corner
+      { top: 90, left: 90 },
+      { top: 200, left: 90 }      // Bottom-right corner
+            // Bottom-right corner
     ];
 
     const newSpots = cornerPositions.map(position => ({
