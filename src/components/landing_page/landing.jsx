@@ -1,3 +1,4 @@
+import { Footer } from "../footer/footer";
 import styles from "./landing.module.css";
 import Logo from "./logo_section";
 import OurCampany from "./our_campany_section";
@@ -13,8 +14,10 @@ function Landing() {
       <div className="container">
         <OurCampany />
         <WhoWeAreSection />
-        <SocialMediaSection />
       </div>
+        <SocialMediaSection />
+      <Footer />
+
     </>
   );
 }
