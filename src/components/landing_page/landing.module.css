@@ -62,8 +62,11 @@
   -webkit-text-fill-color: transparent;
 }
 
-.collase_parent {
-  background-color: black;
+.collase_parent{
+  position: relative;
+  z-index: 9;
+  border-radius: 18px;
+  background-color: black !important;
 }
 
 .collapse_header {

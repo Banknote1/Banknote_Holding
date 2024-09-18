@@ -15,9 +15,10 @@ const OurCampany = () => {
   };
 
   return (
-    <div className={`container ${styles.collase_parent}`}>
+    <div className={`container`}>
       <h3 className={`${styles.section_title}`}>Our Company</h3>
       <Accordion
+      className={`container ${styles.collase_parent}`}
         activeIndex={activeIndex}
         onTabChange={handleTabChange}
         style={{ backgroundColor: "black !important" ,position: 'relative',zIndex:'99'}}
@@ -324,17 +325,17 @@ const OurCampany = () => {
                 We are pleased to offer you a comprehensive suite of services designed to meet your diverse needs. In addition to our financial and investment services, we provide a wide range of specialized services, including:
                 </p>
               </div>
-              <div className="mx-5 my-2 row g-3">
-                <div className="col-md-6">
+              <div className="mx-5 my-2 juictify-content-center row g-3">
+                <div className="col-md-5">
                   <ServiceCart styles={styles} title={'car services'} content={'Car services include maintenance, repairs, and detailing to keep vehicles running smoothly and looking their best. They cover everything from routine check-ups to emergency roadside assistance, ensuring your car remains safe and reliable.'} link={"cxvv"} />
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-5">
                   <ServiceCart styles={styles} title={'home services'} content={'Home services provide essential maintenance, cleaning, and repairs to keep your living space comfortable and functional. They include tasks like plumbing, electrical work, and pest control, ensuring your home is well-maintained and in top condition.'} link={"cxvv"} />
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-5">
                   <ServiceCart styles={styles} title={'transportation services'} content={'Home services provide essential maintenance, cleaning, and repairs to keep your living space comfortable and functional. They include tasks like plumbing, electrical work, and pest control, ensuring your home is well-maintained and in top condition.'} link={"cxvv"} />
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-5">
                   <ServiceCart styles={styles} title={'technology sevises'} content={'Home services provide essential maintenance, cleaning, and repairs to keep your living space comfortable and functional. They include tasks like plumbing, electrical work, and pest control, ensuring your home is well-maintained and in top condition.'} link={"cxvv"} />
                 </div>
               </div>
