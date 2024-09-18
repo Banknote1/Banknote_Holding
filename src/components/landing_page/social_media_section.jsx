@@ -6,7 +6,7 @@ export const SocialMediaSection = () => {
   return (
     <div className={`${styles.social_section}`}>
       <div className={`${styles.social_title} mx-5 col-6`}>
-        grow your business grow your confidence with banknote
+        grow your business grow <br/> your confidence with<br/>  banknote
       </div>
       <div className={`col-6 my-3 mx-5`}>
         <div className="d-flex align-items-center">
@@ -28,9 +28,6 @@ export const SocialMediaSection = () => {
           </div>
         </div>
       </div>
-
-      {/* =========================== footer ================== */}
-      {/* <Footer /> */}
     </div>
   );
 };
