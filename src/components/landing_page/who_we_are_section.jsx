@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 
 export const WhoWeAreSection = () => {
   useEffect(() => {
-    AOS.init({ duration: 3000 ,easing: 'ease-out', mirror: true, }); 
+    AOS.init({ duration: 3000, easing: "ease-out", mirror: true }); 
     AOS.refresh();
     
   }, []);

@@ -14,14 +14,18 @@ function App() {
 
   useEffect(() => {
     const cornerPositions = [
-      { top: 0, left: -5 },       // Top-left corner
+      { top: 0, left: -5 }, // Top-left corner
       { top: 0, left: 90 },
-      { top: 35, left: -10 },      // Bottom-left corner
-        // Top-right corner
-      { top: 90, left: -5 },      // Bottom-left corner
+      { top: 35, left: -10 }, // Bottom-left corner
+      // Top-right corner
+      { top: 200, left: -5 }, // Bottom-left corner
       { top: 90, left: 90 },
-      { top: 200, left: 90 }      // Bottom-right corner
-            // Bottom-right corner
+      { top: 200, left: 90 }, // Bottom-right corner
+      { top: 300, left: 90 },
+      { top: 310, left: -10 },
+      { top: 320, left: 90 },
+      { top: 420, left: -5 },
+      { top: 380, left: 90 },
     ];
 
     const newSpots = cornerPositions.map(position => ({
