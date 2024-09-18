@@ -1,0 +1,23 @@
+.footer{
+    margin-top: 50px;
+}
+.footer_iocn img {
+  width: 200px;
+}
+.footer_content {
+  color: rgba(245, 245, 245, 0.5);
+  text-align: center;
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: lowercase;
+  margin: 20px 0px;
+}
+.footer_title {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto Condensed";
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
