@@ -3,6 +3,11 @@
     padding: 0px 150px;
 
 }
+.footer_iocn{
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+}
 .footer_iocn img {
   width: 200px;
 }
@@ -22,4 +27,25 @@
   font-size: 24px;
   font-weight: 400;
   text-transform: capitalize;
+}
+
+/* ========================== Responsive =============================================== */
+
+@media (max-width:662px) {
+  .footer_iocn img {
+   width: 100px;
+  }
+  .footer{
+    margin-top:40px !important;
+    padding: 0px 10px;
+
+}
+.footer_content {
+  font-size: 18px;
+  margin: 10px 0px;
+}
+.footer_title {
+  font-size: 24px;
+}
+    
 }
