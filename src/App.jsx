@@ -41,7 +41,7 @@ function App() {
       {/* */}
       {/* <Background /> */}
       <div className='background-container backgroundStyle' >
-      <Navbar />      
+      {/* <Navbar />       */}
       {spots.map((spot, index) => (
         <Spot key={index} top={spot.top} left={spot.left} size={spot.size} />
       ))}

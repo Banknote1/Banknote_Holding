@@ -33,19 +33,19 @@
 
 @media (max-width:662px) {
   .footer_iocn img {
-   width: 100px;
+   width: 130px;
   }
   .footer{
     margin-top:40px !important;
-    padding: 0px 10px;
+    padding: 0px 0px;
 
 }
 .footer_content {
-  font-size: 18px;
+  font-size: 16px;
   margin: 10px 0px;
 }
 .footer_title {
-  font-size: 24px;
+  font-size: 20px;
 }
     
 }

@@ -11,10 +11,10 @@ export const WhoWeAreSection = () => {
   }, []);
 
   return (
-    <div className="m-5">
+    <div className="">
       <div className="my-5">
         <h3 className={`${styles.who_we_are} mt-5`} data-aos="fade-up-left">who We Are.. ?</h3>
-        <div className={`mx-5 my-2 ${styles.who_title}`} data-aos="fade-up">
+        <div className={`mx-2 mx-md-5 my-2 ${styles.who_title}`} data-aos="fade-up">
           <p>
             “We are one of the world’s leading and most successful diversified
             investment holding companies delivering continuous and sustainable
@@ -23,12 +23,11 @@ export const WhoWeAreSection = () => {
         </div>
       </div>
       {/* ================ who cart======================== */}
-      <div  className="my-2 mb-5">
-        <div className="row m-5">
-          <div className={`${styles.who_cart_image} col-4`} data-aos="fade-right">
+        <div className="row  m-2 m-md-5 my-5">
+          <div className={`${styles.who_cart_image} d-none d-md-block col-4`} data-aos="fade-right">
             <img src="./assets/images/line1.png" alt="line1.png" />
           </div>
-          <div className={` col-8`} data-aos="fade-up">
+          <div className={`col-12 col-md-8`} data-aos="fade-up">
             <div className={`${styles.who_cart_title}`}>
               Portfolio of Investments
             </div>
@@ -43,11 +42,9 @@ export const WhoWeAreSection = () => {
             </div>
           </div>
         </div>
-      </div>
       {/* ================ who cart======================== */}
-      <div className="">
-        <div className="row m-5">
-          <div className={`col-8`} data-aos="fade-up">
+        <div className="row m-2 m-md-5 my-5 ">
+          <div className={`col-12 col-md-8`} data-aos="fade-up">
             <div className={`${styles.who_cart_title}`} >Our Team</div>
             <div className={`${styles.who_cart_content}`}>
               We benefit and utilize the experience of over 25 business
@@ -56,23 +53,22 @@ export const WhoWeAreSection = () => {
             </div>
           </div>
           <div
-            className={`${styles.who_cart_image} col-4 ${styles.who_cart_image2}`} data-aos="fade-down"
+            className={`${styles.who_cart_image} d-none d-md-block col-4  ${styles.who_cart_image2} `} data-aos="fade-down"
           >
             <img src="./assets/images/line2.png" alt="line2.png" />
           </div>
         </div>
-      </div>
       {/* ================ who cart======================== */}
-      <div className=" mb-5">
-        <div className="row m-5 ">
-          <div className={`${styles.who_cart_image} col-4`}>
+      <div className="mb-5">
+        <div className="row m-2 m-md-5 my-5">
+          <div className={`${styles.who_cart_image} d-none d-md-block col-4`}>
             {/* <img src="./assets/images/line1.png" alt="line1.png" /> */}
           </div>
-          <div className={`col-8`} data-aos="fade-up">
-            <div className={`${styles.who_cart_title} text-end`}>
+          <div className={`col-12 col-md-8`} data-aos="fade-up">
+            <div className={`${styles.who_cart_title} text-start text-md-end`}>
             Investment Strategy
             </div>
-            <div className={`${styles.who_cart_content} text-end` }>
+            <div className={`${styles.who_cart_content} text-start text-md-end` }>
             We seek out business teams with the coherence and expertise to develop a project capable of reaping long-term financial returns
               <span style={{ color: "#2398FF" }}> learn more...</span>
             </div>
