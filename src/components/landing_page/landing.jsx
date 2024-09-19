@@ -15,9 +15,8 @@ function Landing() {
         <OurCampany />
         <WhoWeAreSection />
       </div>
-        <SocialMediaSection />
+      <SocialMediaSection />
       <Footer />
-
     </>
   );
 }
