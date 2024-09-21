@@ -40,11 +40,11 @@ function App() {
     <Router>
       {/* */}
       {/* <Background /> */}
-      <div className='background-container backgroundStyle' >
-      {/* <Navbar />       */}
-      {spots.map((spot, index) => (
-        <Spot key={index} top={spot.top} left={spot.left} size={spot.size} />
-      ))}
+      <div className="background-container backgroundStyle">
+        <Navbar />
+        {spots.map((spot, index) => (
+          <Spot key={index} top={spot.top} left={spot.left} size={spot.size} />
+        ))}
         <Routes>
           <Route path="/" element={<Landing />} />
           {/* <Route path="/about" element={<About />} /> */}
