@@ -29,7 +29,7 @@ export const WhoWeAreSection = () => {
           </div>
           <div className={`col-12 col-md-8`} data-aos="fade-up">
             <div className={`${styles.who_cart_title}`}>
-              Portfolio of Investments
+            our vision and mission
             </div>
             <div className={`${styles.who_cart_content}`}>
               <span style={{ color: "rgba(255, 200, 3, 0.80)" }}>

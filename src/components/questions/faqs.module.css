@@ -1,0 +1,72 @@
+.title {
+  font-family: "Bebas Neue";
+  font-size: 107.446px;
+  font-weight: 400;
+  background: linear-gradient(112deg, #fff 24.02%, #999 98.59%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sub_title {
+  color: rgba(245, 245, 245, 0.7);
+  text-align: center;
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.get_in_touch_a{
+    color: #000;
+font-family: Roboto;
+font-size: 23.301px;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize; 
+}
+.section_title {
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 100px;
+    font-weight: 400;
+    background: linear-gradient(112deg, #fff 24.02%, #999 98.59%);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .collase_parent{
+    position: relative;
+    z-index: 9;
+    border-radius: 18px;
+    background-color: black !important;
+  }
+  
+  .collapse_header {
+    font-family: "Bebas Neue";
+    font-size: 50px;
+    font-weight: 400;
+  }
+  .collapse_header a {
+    text-decoration: none;
+    background: linear-gradient(112deg, #fff 24.02%, #999 98.59%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .active_according {
+    text-decoration: none;
+    background: linear-gradient(90deg, #e9c568 0%, rgba(153, 120, 2, 0.8) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .collapse_header svg {
+    display: none;
+  }
+  
+  .accordion_body {
+    color: #fff;
+    font-family: "Roboto Condensed";
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: lowercase;
+  }

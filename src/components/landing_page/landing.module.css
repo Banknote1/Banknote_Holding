@@ -302,6 +302,32 @@
 /* ========================================================================================================== */
 /* ========================================= start Responsive ===================================================== */
 @media (max-width:662px) {
+  /* ========================================= start company ===================================================== */
+.section_title{
+  font-size: 90px;  
+}
+.collapse_header{
+  font-size: 24px;
+}
+.accordion_body{
+  font-size: 18px;
+}
+.accordion_body img {
+  height: 280px;
+}
+.finance_card .cart_title{
+  font-size: 22px;
+}
+.finance_card .cart_content{
+  font-size: 18px;
+}
+
+.finance_card .cart_button button,
+.btn_more button,
+.service_cart button {
+  font-size: 18px;
+  padding: 5px 10px;
+}
   /* ========================================= start who we are ===================================================== */
   .who_we_are{
     font-size: 90px;

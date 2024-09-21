@@ -26,9 +26,9 @@ export const Footer = () => {
       {/* =============== 3rd column =============== */}
       <div className="col-6 col-md-3 mb-2">
         <div className={`${styles.footer_title}`}>find out more</div>
+        <div className={`${styles.footer_content}`}>about us</div>
         <div className={`${styles.footer_content}`}>Businesses</div>
         <div className={`${styles.footer_content}`}>INVESTOR RELATIONS</div>
-        <div className={`${styles.footer_content}`}>leadership</div>
       </div>
       {/* =============== 4rd column =============== */}
       <div className="col-6 col-md-3 mb-2">

@@ -51,8 +51,8 @@ const OurCampany = () => {
           }
         >
           <div className={styles.accordion_body}>
-            <div className="row mx-5 align-items-center mb-5 ">
-              <div className="col-8">
+            <div className="row mx-2 mx-md-5 align-items-center mb-5 ">
+              <div className="col-12 col-md-8">
                 <p>
                   "Securing Your Future, Together."
                   <br />
@@ -70,13 +70,13 @@ const OurCampany = () => {
                   secure financial future.
                 </div>
               </div>
-              <div className="col-4">
+              <div className="col-12 col-md-4">
                 <img src="./assets/images/FINANCE.png" alt="Finance" />
               </div>
             </div>
             {/* ============= carts ========== */}
-            <div className="row mx-5 g-2 d-flex align-items-stretch">
-              <div className="col-6 col-md-3">
+            <div className="row mx-2 mx-md-5 g-2 d-flex align-items-stretch">
+              <div className="col-12 col-md-3">
                 <FinanceCart
                   styles={styles}
                   title={"banking facilities"}
@@ -85,7 +85,7 @@ const OurCampany = () => {
                   }
                 />
               </div>
-              <div className="col-6 col-md-3">
+              <div className="col-12 col-md-3">
                 <FinanceCart
                   styles={styles}
                   title={"financial planning"}
@@ -94,7 +94,7 @@ const OurCampany = () => {
                   }
                 />
               </div>
-              <div className="col-6 col-md-3">
+              <div className="col-12 col-md-3">
                 <FinanceCart
                   styles={styles}
                   title={"Accounting Advisory Services"}
@@ -103,7 +103,7 @@ const OurCampany = () => {
                   }
                 />
               </div>
-              <div className="col-6 col-md-3">
+              <div className="col-12 col-md-3">
                 <FinanceCart
                   styles={styles}
                   title={"Assurance & Advisory"}

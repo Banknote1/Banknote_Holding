@@ -1,0 +1,15 @@
+{
+    "FrequentlyAskQuestions": "اكثر الاسئلة",
+    "questions": [
+      {
+        "q": "What is the return policy?",
+        "a": "You can return any product within 30 days."
+      },
+      {
+        "q": "Do you offer international shipping?",
+        "a": "Yes, we ship to over 50 countries worldwide."
+      }
+    ],
+    "description": "هذا تطبيق React متعدد اللغات."
+  }
+  

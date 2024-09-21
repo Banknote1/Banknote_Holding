@@ -1,5 +1,5 @@
 // App.jsx
-import  { useState, useEffect } from 'react';
+import  { useState, useEffect, useContext } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
  import 'bootstrap/dist/css/bootstrap.min.css';
@@ -8,8 +8,12 @@ import './App.css';
 import Navbar from './components/navbar/Navbar';
 import Landing from './components/landing_page/landing';
 import Spot from './components/Background/Spot'
-
+import { Faqs } from './components/questions/faqs';
+import { useTranslation } from 'react-i18next';
+import { LanguageContext } from './context/LanguageContext';
 function App() {
+  const { language, changeLanguage } = useContext(LanguageContext);
+
   const [spots, setSpots] = useState([]);
 
   useEffect(() => {
@@ -38,20 +42,24 @@ function App() {
 
   return (
     <Router>
-      {/* */}
+      
       {/* <Background /> */}
       <div className='background-container backgroundStyle' >
-      {/* <Navbar />       */}
+      <Navbar />      
       {spots.map((spot, index) => (
         <Spot key={index} top={spot.top} left={spot.left} size={spot.size} />
       ))}
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/faqs" element={<Faqs />} />
           {/* <Route path="/about" element={<About />} /> */}
           {/* Add more routes here as needed */}
         </Routes>
       </div>
+      <button onClick={() => changeLanguage('en')}>English</button>
+      <button onClick={() => changeLanguage('ar')}>Arabic</button>
     </Router>
+    
   );
 }
 

@@ -1,0 +1,43 @@
+{
+    "FrequentlyAskQuestions": "Frequently Ask Questions",
+    "questions": [
+      {
+        "q": "What makes your agency different from others?",
+        "a": "You can return any product within 30 days."
+      },
+      {
+        "q": "How can I get started with your agency?",
+        "a": "Yes, we ship to over 50 countries worldwide."
+      },
+      {
+        "q": "Are your services available to individuals and businesses?",
+        "a": "Yes, we ship to over 50 countries worldwide."
+      },
+      {
+        "q": "How often will we review my financial plan?",
+        "a": "Yes, we ship to over 50 countries worldwide."
+      },
+      {
+        "q": "What is the minimum deposit required to start trading?",
+        "a": "Yes, we ship to over 50 countries worldwide."
+      },
+      {
+        "q": "How often will we review my financial plan?",
+        "a": "Yes, we ship to over 50 countries worldwide."
+      },
+      {
+        "q": "Are there educational resources available for new traders?",
+        "a": "Yes, we ship to over 50 countries worldwide."
+      },
+      {
+        "q": "How can I start exporting my products? ",
+        "a": "Yes, we ship to over 50 countries worldwide."
+      },
+      {
+        "q": "How do I find potential international buyers?",
+        "a": "Yes, we ship to over 50 countries worldwide."
+      }
+    ],
+    "description": "This is a multi-language React app."
+  }
+  
