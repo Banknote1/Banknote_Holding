@@ -6,10 +6,8 @@ import { FinanceCart } from "../shared/finance_cart";
 import { ServiceCart } from "../shared/service_cart";
 
 const OurCampany = () => {
-  // State to manage the active index of the Accordion
   const [activeIndex, setActiveIndex] = useState(0);
 
-  // Function to handle tab change and toggle the accordion state
   const handleTabChange = (e) => {
     setActiveIndex(e.index);
   };

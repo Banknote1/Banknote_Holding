@@ -1,41 +1,39 @@
 {
-    "FrequentlyAskQuestions": "Frequently Ask Questions",
+    "frequently_ask_questions": "Frequently Ask Questions",
+    "get_support": "Can’t find what you’re looking for? Get support from our white glove service team.",
+    "get_in_touch": "get in touch",
     "questions": [
       {
         "q": "What makes your agency different from others?",
-        "a": "You can return any product within 30 days."
+        "a": "We prioritize personalized service, transparency, and trust. Our approach is tailored to each client's unique needs, ensuring that we provide strategies that are aligned with your financial goals."
       },
       {
         "q": "How can I get started with your agency?",
-        "a": "Yes, we ship to over 50 countries worldwide."
+        "a": "You can start by scheduling a free consultation with one of our financial advisors. We’ll discuss your needs, answer any questions, and outline a plan tailored specifically for you."
       },
       {
         "q": "Are your services available to individuals and businesses?",
-        "a": "Yes, we ship to over 50 countries worldwide."
+        "a": "Yes, we work with both individuals and businesses. Our services are designed to help clients manage personal finances as well as business financial strategies."
       },
       {
         "q": "How often will we review my financial plan?",
-        "a": "Yes, we ship to over 50 countries worldwide."
+        "a": "We typically recommend reviewing your financial plan annually to ensure it remains aligned with your goals and any changes in your life or financial situation. However, we can adjust the frequency of reviews based on your specific needs and preferences, ensuring your plan stays on track throughout the year."
+      },
+      {
+        "q": "How can I make informed trading decisions?",
+        "a": "We offer a range of tools and resources, including market research, real-time data, analysis reports, and trading signals. Our educational materials and expert advice also help you make informed decisions."
       },
       {
         "q": "What is the minimum deposit required to start trading?",
-        "a": "Yes, we ship to over 50 countries worldwide."
-      },
-      {
-        "q": "How often will we review my financial plan?",
-        "a": "Yes, we ship to over 50 countries worldwide."
-      },
-      {
-        "q": "Are there educational resources available for new traders?",
-        "a": "Yes, we ship to over 50 countries worldwide."
+        "a": "The minimum deposit varies based on the type of account and trading strategy. We offer various account types to accommodate different levels of investment, starting from a modest deposit."
       },
       {
         "q": "How can I start exporting my products? ",
-        "a": "Yes, we ship to over 50 countries worldwide."
+        "a": "To begin exporting, you need to conduct market research, understand regulatory requirements, and prepare your products for international markets. We offer guidance through each step of this process."
       },
       {
         "q": "How do I find potential international buyers?",
-        "a": "Yes, we ship to over 50 countries worldwide."
+        "a": "We assist with market analysis and networking opportunities to connect you with potential buyers. We also help with trade shows, online platforms, and international trade directories."
       }
     ],
     "description": "This is a multi-language React app."

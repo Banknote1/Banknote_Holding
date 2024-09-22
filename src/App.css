@@ -9,3 +9,15 @@ body{
   overflow: hidden;
   box-sizing: border-box;
 }
+.faqs .p-accordion-tab{
+  padding: 15px;
+  border: 0.863px solid rgba(233, 197, 104, 0.2);
+  border-radius: 10px;
+  opacity: 0.9;
+  background: rgba(6, 4, 4, 0.5);
+  box-shadow: 0px 3.451px 3.451px 0px rgba(255, 200, 3, 0.15) inset;
+  background-color: black !important; 
+  position: relative;
+  z-index: 9;
+  margin-bottom: 10px;
+}

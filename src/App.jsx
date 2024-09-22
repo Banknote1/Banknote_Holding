@@ -44,11 +44,11 @@ function App() {
     <Router>
       
       {/* <Background /> */}
-      <div className='background-container backgroundStyle' >
-      <Navbar />      
-      {spots.map((spot, index) => (
-        <Spot key={index} top={spot.top} left={spot.left} size={spot.size} />
-      ))}
+      <div className="background-container backgroundStyle">
+        <Navbar />
+        {spots.map((spot, index) => (
+          <Spot key={index} top={spot.top} left={spot.left} size={spot.size} />
+        ))}
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/faqs" element={<Faqs />} />
@@ -56,8 +56,8 @@ function App() {
           {/* Add more routes here as needed */}
         </Routes>
       </div>
-      <button onClick={() => changeLanguage('en')}>English</button>
-      <button onClick={() => changeLanguage('ar')}>Arabic</button>
+      {/* <button onClick={() => changeLanguage('en')}>English</button>
+      <button onClick={() => changeLanguage('ar')}>Arabic</button> */}
     </Router>
     
   );
