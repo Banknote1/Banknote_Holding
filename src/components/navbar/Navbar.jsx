@@ -1,10 +1,24 @@
-import React from "react";
+
+import React, { useContext, useState } from "react";
 import styles from "./Nabar.module.css";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next"; // Import translation hook
+import { LanguageContext } from "../../context/LanguageContext";
+
 function Navbar() {
+  const { i18n } = useTranslation();
+  const { language, changeLanguage } = useContext(LanguageContext); 
+
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const handleLanguageChange = (lang) => {
+    changeLanguage(lang); 
+    setIsDropdownOpen(false); 
+  };
+
   return (
     <div className={styles.desktopNavBar}>
-      <div className={` fixed-top ${styles.cont}`}>
+      <div className={`fixed-top ${styles.cont}`}>
         <div className={styles.Navbar}>
           <div className={styles.NavLogo}>
             <a className="navbar-brand" href="/">
@@ -52,7 +66,7 @@ function Navbar() {
                     <li className={`nav-item ${styles.navItem}`}>
                       <Link
                         className={`nav-link mx-2 ${styles.NavLink}`}
-                        to="/"
+                        to="/faqs"
                       >
                         FAQS
                       </Link>
@@ -67,28 +81,39 @@ function Navbar() {
               <button className={styles.button}>Contact Us</button>
             </div>
             <div className={styles.Lang}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="38"
-                height="38"
-                viewBox="0 0 38 38"
-                fill="none"
-              >
-                <path
-                  d="M1 19C1 28.9414 9.0586 37 19 37C28.9414 37 37 28.9414 37 19C37 9.0586 28.9414 1 19 1C9.0586 1 1 9.0586 1 19Z"
-                  stroke="white"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M20.8008 1.09033C20.8008 1.09033 26.2008 8.20033 26.2008 19.0003C26.2008 29.8003 20.8008 36.9103 20.8008 36.9103M17.2008 36.9103C17.2008 36.9103 11.8008 29.8003 11.8008 19.0003C11.8008 8.20033 17.2008 1.09033 17.2008 1.09033M2.13477 25.3003H35.8668M2.13477 12.7003H35.8668"
-                  stroke="white"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+              {/* Language Dropdown */}
+              <div className="dropdown">
+                <button
+                  className={`btn btn-light dropdown-toggle ${styles.langButton}`}
+                  type="button"
+                  id="dropdownMenuButton"
+                  aria-expanded={isDropdownOpen}
+                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                >
+                  {language === "en" ? "EN" : "AR"}
+                </button>
+                <ul
+                  className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <li>
+                    <button
+                      className="dropdown-item"
+                      onClick={() => handleLanguageChange("en")}
+                    >
+                      English
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      className="dropdown-item"
+                      onClick={() => handleLanguageChange("ar")}
+                    >
+                      Arabic
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div className="whatsapp">
               <svg
@@ -129,3 +154,4 @@ function Navbar() {
 }
 
 export default Navbar;
+
